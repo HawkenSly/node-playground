@@ -66,3 +66,7 @@ let array5 = value4.split(" ", 2);
 let array6 = value4.slice(0,6);
 //console.log(array6);
 //Hello
+
+
+let array55 = ["hi", "hi", "hello"];
+console.log(array55.length)
