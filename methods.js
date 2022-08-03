@@ -11,4 +11,10 @@ let x = "Hello";
 
 
 let value1 = "hello";
-console.log(value1.toUpperCase());
+//console.log(value1.toUpperCase());
+//HELLO
+
+
+let string1 = "sora donald goofy";
+console.log(string1.search("don"));
+//5

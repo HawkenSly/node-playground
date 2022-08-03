@@ -16,8 +16,8 @@ let array3 = array1.concat(array2);
 function upperCaseArray(arg) {
     let glue = [];
 if (Array.isArray(arg)) {
-for (let i = 1; (arg.length + 1) > i; i++) {
-glue.push(arg[i - 1].toUpperCase());
+for (let i = 0; i < arg.length; i++) {
+glue.push(arg[i].toUpperCase());
 }
   return glue;
 }
