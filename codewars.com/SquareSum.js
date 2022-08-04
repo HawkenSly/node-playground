@@ -11,4 +11,4 @@ function squareSum(numbers){
     return value1;
   };
 
-  console.log(squareSum([5, 5, 6]))
+  //console.log(squareSum([5, 5, 6]))

@@ -69,4 +69,8 @@ let array6 = value4.slice(0,6);
 
 
 let array55 = ["hi", "hi", "hello"];
-console.log(array55.length)
+//console.log(array55.length)
+
+let array11 = [5, 77, 32, 4] 
+
+console.log(Math.min(...array11))
