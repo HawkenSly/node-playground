@@ -73,4 +73,27 @@ let array55 = ["hi", "hi", "hello"];
 
 let array11 = [5, 77, 32, 4] 
 
-console.log(Math.min(...array11))
+//console.log(Math.min(...array11))
+//10
+
+
+let vartest = [];
+//console.log(vartest.length);
+//0
+
+
+function find_average(array) {
+  let average = 0;
+  let size = array.length;
+  let value = 0;
+  for (let x of array) {
+    average += array[x];
+  }
+  value = (average / size);
+  return value;
+}
+
+//console.log(find_average([3, 4, 3]));
+
+let value12 = "testing";
+console.log(value12.endsWith("ing"));
