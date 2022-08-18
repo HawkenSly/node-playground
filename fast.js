@@ -96,4 +96,5 @@ function find_average(array) {
 //console.log(find_average([3, 4, 3]));
 
 let value12 = "testing";
-console.log(value12.endsWith("ing"));
+//console.log(value12.endsWith("ing"));
+//true
