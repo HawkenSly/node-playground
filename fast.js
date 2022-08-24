@@ -98,3 +98,9 @@ function find_average(array) {
 let value12 = "testing";
 //console.log(value12.endsWith("ing"));
 //true
+
+// console.log(`I am ${value12} out ecmascript
+// features`);
+
+// I am testing out ecmascript
+// features
