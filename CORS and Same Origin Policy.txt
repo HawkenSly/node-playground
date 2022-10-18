@@ -1,0 +1,35 @@
+https://www.google.com:443/maps
+
+The origin is these three things:
+
+Protocol:
+https://
+
+Host:
+www.google.com
+
+Port:
+:443
+
+When any of these change, we are no longer on the same origin. Can't change website, can't change protocol.
+
+Same origin policy is a security feature of the browser. The browser restricts requests from different origins than the site you are on.
+Google isn't allowed to request information from Facebook, and our browser will deny it.
+Google can send data/post TO facebook, but cannot request data.
+
+If you're on google.com and you use window.fetch('https://en.wikipedia.org');, it will be blocked by CORS policy. It will say "No 'Access-Control-Allow-Origin' is present."
+
+Same Origin Policy protects users by restricting what can be requested.
+
+CORS stands for Cross-Origin-Resource-Sharing.
+
+Wikipedia.org issues a GET request to wikimedia.org. Under response headers, it shows 'access-control-allow-origin: *'.
+This header is set by the server. If this header is not set, the default rules of CORS are set. We can set this as developers when we know requests from a different domain are safe and expected. This is always set by the server that holds the data (since it is the one receiving the GET request).
+
+
+Access-Control-Allow-Origin: has a few different settings.
+One is using a website link: https://www.google.com 
+* allows ALL websites to request from the server.
+You want to manually set each website you give data to, since * is very unsafe.
+
+Whitelisting means you deny access by default while explicitly listing exceptions. This is ALWAYS the best approach for security.
